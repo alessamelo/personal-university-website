@@ -144,7 +144,6 @@ header {
     box-shadow: 0 3px 10px var(--shadow);
 }
 
-/* Image on the left */
 .header-image {
     flex-shrink: 0;
     width: 130px;
@@ -155,7 +154,6 @@ header {
     box-shadow: 0 4px 12px var(--shadow);
 }
 
-/* Text occupies the remaining space */
 .header-text {
     flex: 1;
     text-align: left;
@@ -163,7 +161,6 @@ header {
     background-color: rgb(from var(--pink-soft) r g b / 85%);
 }
 
-/* Main title */
 header h1 {
     display: inline-block;
     margin: 0 0 10px;
@@ -179,7 +176,6 @@ header h1 {
     backdrop-filter: blur(4px);
 }
 
-/* Introduction */
 header p {
     max-width: 520px;
     margin: 0.1 0.1 6px;
@@ -199,71 +195,93 @@ header p:last-of-type {
     opacity: .85;
 }
 
-/* Stack cleanly on narrow screens */
 @media (max-width: 1000px) {
     .header-content {
         flex-direction: column;
         text-align: center;
         padding: 28px 24px;
     }
-
     .header-text {
         text-align: center;
     }
-
     header p {
         margin-left: 0.2;
         margin-right: auto;
     }
 }
 
+main{
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-top:30px;
+    padding-bottom:20px;
+    margin: 30px 6%;
+    background-color: var(--pink-light);
+    border: 5px solid var(--purple_light);
+    border-radius: 20px;
+}
 
 section {
+    background-color: var(--white);
+    padding: 40px;
+    border: 4px solid var(--border);
+    border-radius: 30px;
+    padding-bottom: 60px;
 
-    background-color: var(--gray-soft);
-
-    padding: 20px;
-
-    border: 1px solid var(--border);
 }
 
 
 table {
-
     background-color: var(--gray-soft);
-
     padding: 20px;
-
     text-align: center;
-
     border: 1px solid var(--border);
 }
 
+th{
+    background-color:var(--pink-dark);
+    color: var(--white);
+}
+tr{
+    background-color: var(--pink-light);
+}
 
 form {
-
     background-color: var(--background-secondary);
-
     border: 1px solid var(--border);
-
     padding: 20px;
 }
 
 
 h1,
 h2 {
-
     text-align: center;
-
     color: var(--pink-dark);
-
     font-family: var(--font_heading);
 }
 
 
 img {
-
     display: block;
-
     margin: 0 auto;
+    text-align: left;
+    border: 1px solid var(--background)
+}
+
+ul, ol {
+    text-align: left;
+    background-color: var(--purple_light);
+    color:var(--gray-soft);
+    border-radius:40px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    margin: 20px 6%;
+}
+
+li{
+   padding-left: 15px; 
+   background-color: var(--white-pink);
+   border-radius: 20px;
+   border: 2px solid var(--gray-soft);
+   color: var(--black);
 }
