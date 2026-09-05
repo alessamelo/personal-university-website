@@ -59,6 +59,23 @@ $("#change-look").click(function() {
     }
 });
 
+/* Random color*/
+$("#random-color").click(function() {
+
+    let colors = [
+        "#fff5fe",
+        "#f3f6ff",
+        "#f5fff7",
+        "#fff8f0",
+        "#f9f2ff"
+    ];
+
+    let randomColor = colors[Math.floor(Math.random() * colors.length)];
+
+    $("main").css("background-color", randomColor);
+
+});
+
 
 /* FORM VALIDATION*/
 $("#contact-form").submit(function(event) {
