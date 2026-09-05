@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web - Illustrations</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link
+        rel="icon"
+        type="image/jpg"
+        href="../images/tamon.jpg"
+    >
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Home</a>
+            <a href="courses.html">Courses</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="illustrations.html">Illustration</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="hero">
+
+            <img
+                src="../images/tamon.jpg"
+                alt="Decorative character"
+                class="header-image"
+            >
+            <div class="hero-text">
+                <h1>My Illustrations</h1>
+                <article>
+                    <p>
+                        Illustration is one of my favorite creative hobbies.
+                        I enjoy experimenting with different styles, characters,
+                        and techniques. Here are some of the drawings I have created.
+                    </p>
+                    <button class="more" id="change-look" type="button">
+                        <b>Change page look</b>
+                    </button>
+                </article>
+            </div>
+        </div>
+    </header>
+
+
+    <main>
+
+        <section>
+
+            <h2>My Gallery</h2>
+
+            <p>
+                Here are some of my digital illustrations and fan art.
+                Click on an image to see it in more detail.
+            </p>
+
+            <div class="gallery">
+
+                <!-- Bratz Illustration -->
+                <div class="illustration-item">
+                    <img
+                        src="../images/lina_bratz.png"
+                        alt="Bratz Fashion Pixiez fan art of Lyna"
+                        data-title="Bratz Illustration"
+                        data-description="This illustration is fan art from the Bratz Fashion Pixiez movie. It depicts Lyna in her secret place. I enjoyed recreating the character and experimenting with lighting and rendering."
+                        data-time="3 hours"
+                        data-tools="Krita"
+                        data-technique="Digital rendering"
+                    >
+
+                </div>
+
+
+                <!-- Karol Sevilla Portrait -->
+
+                <div class="illustration-item">
+                    <img
+                        src="../images/luna.png"
+                        alt="Digital portrait of Luna Valente"
+                        data-title="Karol Sevilla Portrait"
+                        data-description="This drawing is fan art of Luna Valente, a character portrayed by Karol Sevilla. It was created digitally, and I focused on rendering the character's face, hair, and clothing."
+                        data-time="42 hours"
+                        data-tools="Krita"
+                        data-technique="Digital painting"
+                    >
+
+                </div>
+
+
+                <!-- Star Butterfly Fan Art -->
+                <div class="illustration-item">
+                    <img
+                        src="../images/star_butterly.png"
+                        alt="Star Butterfly fan art"
+                        data-title="Star Butterfly Fan Art"
+                        data-description="This is one of my favorite illustrations. It is fan art of Star Butterfly from Star vs. the Forces of Evil. In this drawing, I experimented with shadows and lighting to make the scene more dynamic and visually engaging."
+                        data-time="4.5 hours"
+                        data-tools="Krita"
+                        data-technique="Lighting and shadow rendering"
+                    >
+                </div>
+
+                <!-- Marinette -->
+
+                <div class="illustration-item">
+                    <img
+                        src="../images/marinette.png"
+                        alt="Marinette from Miraculous Ladybug"
+                        data-title="Marinette"
+                        data-description="This illustration is fan art of Marinette from Miraculous Ladybug. It was a challenging drawing because anatomy and backgrounds are not my strongest areas. However, I enjoyed working on the composition and was happy with the final result."
+                        data-time="5 hours"
+                        data-tools="Krita"
+                        data-technique="Digital painting and rendering"
+                    >
+                </div>
+
+
+                <!-- Cleo de Nile -->
+                <div class="illustration-item">
+                    <img
+                        src="../images/cleo_repaint.png"
+                        alt="Cleo de Nile Monster High fan art"
+                        data-title="Cleo de Nile"
+                        data-description="This is one of my favorite illustrations. It is a repaint of an older drawing featuring Cleo de Nile from Monster High. In the past, I had difficulties with head proportions and tended to overuse the blending tool. For this repaint, I focused more on anatomy, proportions, and controlled shading. Although there are still some imperfections, I am very happy with the result."
+                        data-time="3 hours"
+                        data-tools="Krita"
+                        data-technique="Digital sketching, coloring, and detailing"
+                    >
+                </div>
+            </div>
+        </section>
+
+        <!-- Illustration Modal -->
+        <div id="illustration-modal">
+
+            <div class="modal-content">
+
+                <button id="close-modal" type="button">
+                    ×
+                </button>
+               <img
+                    id="modal-image"
+                    src=""
+                    alt=""
+                >
+                <h2 id="modal-title"></h2>
+                <p id="modal-description"></p>
+                <article>
+                    <h3>Drawing Details</h3>
+                    <ul>
+                        <li id="modal-time"></li>
+                        <li id="modal-tools"></li>
+                        <li id="modal-technique"></li>
+
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </main>
+
+
+    <footer>
+
+        <p>
+            &copy; 2026 Alessa. All rights reserved.
+        </p>
+
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js"></script>
+
+    <script src="../script.js"></script>
+
+</body>
+
+</html>
